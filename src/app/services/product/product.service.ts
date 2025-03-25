@@ -42,7 +42,7 @@ export class ProductService {
   filteredItems = [...this.products];
 
   applyFilters(searchTerm: string, sortOption: string): Product[] {
-    let tempItems = [...this.filteredItems];
+    let tempItems = [...this.products];
 
     if (searchTerm) {
       tempItems = tempItems.filter(item =>
